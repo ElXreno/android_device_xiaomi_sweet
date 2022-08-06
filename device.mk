@@ -54,14 +54,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/sm6150-idp-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sm6150-idp-snd-card_Button_Jack.kl
 
 # NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    SecureElement \
-    Tag
+TARGET_USES_NQ_NFC := false
+TARGET_NFC_SKU := sweet
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service
+    com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
@@ -107,6 +104,10 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    nfc
 
 # Recovery
 PRODUCT_PACKAGES += \
