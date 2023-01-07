@@ -1,2 +1,7 @@
 # Display
 ro.sf.force_hwc_brightness=1
+
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
