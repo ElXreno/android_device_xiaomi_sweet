@@ -31,10 +31,6 @@ ODM_MANIFEST_SKUS += sweet
 ODM_MANIFEST_SWEET_FILES := \
     $(DEVICE_PATH)/configs/hidl/manifest-nfc.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sweet
-TARGET_RECOVERY_DEVICE_MODULES := libinit_sweet
-
 # Kernel
 TARGET_KERNEL_CONFIG := sweet_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
