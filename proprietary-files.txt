@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V13.0.16.0.SKFEUXM, unless pinned
+# These proprietary files are extracted from Redmi Note 10 Pro (codenamed `sweet`) MIUI V14.0.2.0.TKFMIXM, unless pinned
 
 # Audio
 vendor/lib/liba2dpoffload.so
@@ -282,10 +282,6 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
-
-# Camera-sensors - V13.0.5.0.SKFINXM-release-keys
-vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|e199e2efe02578979c129e969bde3d2739b30517
-vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|bbb06ffce56cff50b61601b2e6f3ed9c2960663d
 
 # Display
 vendor/lib64/hw/hwcomposer.sm6150.so
